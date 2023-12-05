@@ -233,6 +233,34 @@
 }
 
 
+.sparkc {
+  opacity: 0;
+}
+
+.like-icon:hover .core:hover {
+  cursor: pointer;
+  fill: var(--color-main);
+  animation: 0.3s 0.5s;
+}
+
+
+.core {
+  fill: var(--color-main);
+  transition: 0.3s;
+  animation-delay: 0s ;
+  animation-fill-mode: ;
+
+}
+
+.main-body {
+  fill: var(--color-main);
+  transition: 0.3s;
+  animation-delay: 0.5s ;
+  animation-fill-mode:  ;
+} 
+
+
+
 .button_container {
   display: flex;
   justify-content: flex-end;
