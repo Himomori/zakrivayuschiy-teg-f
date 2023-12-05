@@ -8,25 +8,29 @@
 
 :root.theme-light {
     --color-main: #000;
-    --background-color: #FFF;
+    --background-color: #fff;
     --font-weight-main: 400;
     --font-weight-subtitle: 700;
     --color-shadow: #fff;
     --gradient-1: #d3d3d3;
     --gradient-2: #e7e7e7;
     --gradient-3: #1a1a1a;
+    --difference: #000;
+    --background-button: #fff;
 }
 
 @media (prefers-color-scheme: light) { 
      :root {
         --color-main: #000;
-        --background-color: #FFF;
+        --background-color: #fff;
         --font-weight-main: 400;
         --font-weight-subtitle: 700;
         --color-shadow: #fff;
         --gradient-1: #d3d3d3;
         --gradient-2: #e7e7e7;
         --gradient-3: #1a1a1a;
+        --difference: #000;
+        --background-button: #fff;
     }
 }
 
@@ -39,6 +43,9 @@
     --gradient-1: #000;
     --gradient-2: #007f0c;
     --gradient-3: #004306;
+    --difference: #e7e7e7;
+    --background-button: #00CC14;
+
 }
 
 @media (prefers-color-scheme: dark) { 
@@ -51,5 +58,7 @@
         --gradient-1: #000;
         --gradient-2: #007f0c;
         --gradient-3: #004306;
+        --difference: #e7e7e7;
+        --background-button: #00CC14;
     }
 }
