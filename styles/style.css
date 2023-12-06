@@ -44,10 +44,10 @@
   border: 2px solid var(--color-main);
   padding-block-start: 136px;
   padding-block-end: 20px;
-  margin-block-start: 102px;
-  margin-block-end: 102px;
-  margin-left: var(--margin);
-  margin-right: var(--margin);
+  /* margin-block-start: 102px;
+  margin-block-end: 102px; */
+  margin: 0 auto;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,8 +141,8 @@
 }
 
 .main {
-  margin-left: var(--margin);
-  margin-right: var(--margin);
+  margin: 0 auto;
+  width: 50%;
 }
 
 .card__title {
@@ -410,13 +410,13 @@
 }
 
 @media (width <= 375px) {
-  .header {
+  /* .header {
     margin: 100px 0px 98px;
   }
 
   .main {
     margin: 80px 0px;
-  }
+  } */
 
   .footer_save-button {
     display: flex;
