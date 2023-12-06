@@ -154,7 +154,7 @@
   background-color: var(--background-color);
 }
 
-.images_container {
+.images__container {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -185,8 +185,8 @@
 
 }
 
-.images_difference {
-  mix-blend-mode: difference;
+.images- {
+
 }
 
 .images-grayscale {
@@ -220,7 +220,7 @@
 
 
 .paragraph__title {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--color-main);
   font-weight: var(--font-weight-subtitle);
   margin-inline-start: 7px;
@@ -229,7 +229,7 @@
 }
 
 .paragraph{
-  font-size: 18px;
+  font-size: 14px;
   margin: 28px 25px;
   color: var(--color-main);
   font-weight: var(--font-weight-main);
@@ -329,29 +329,29 @@
 
 
 .like-icon.is-liked .core {
-  fill: green;
-  transition: fill 0.3s 0.05s;
+  fill: var(--heart-background);
+  transition: fill 0.3s;
 }
 
 .like-icon.is-liked .main-body {
-  fill: green;
-  transition: fill 0.6s 0.05s;
+  fill: var(--heart-background);
+  transition: fill 0.3s 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  fill: green;
-  transition: fill 0.9s 0.05s;
+  fill: var(--heart-background);
+  transition: fill 0.3s 0.06s;
 }
 
 .like-icon.is-liked .heart {
-  fill: green;
-  animation: 0.3s icon-scale ease-in 0.12s alternate;
+  fill: var(--heart-background);
+  animation: 0.3s icon-scale ease-in 0.1s alternate;
   transform-origin: center;
 }
 
 .like-icon.is-liked .sparkc {
-  fill: green;
-  animation: 0.13s icon-sparkc ease-in 0.13s alternate;
+  fill: var(--heart-background);
+  animation: 0.3s icon-sparkc ease-in 0.3s alternate;
 }
 
 .card__icon-button:focus {
@@ -360,7 +360,7 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--color-main);
-  transition: 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 
@@ -382,8 +382,55 @@
 
 .footer_save-button {
   width: 49%;
-  padding: 15px 10px;
+  padding: 15px 15px;
+  border: 2px solid var(--color-main);
 }
+
+.dialog[open] {
+  position: fixed;
+  padding: 0;
+  border: 2px solid var(--color-main);
+  background-color: var(--background-color);
+}
+
+.dialog::backdrop {
+  opacity: 0.75;
+  background-color: var(--color-main);
+}
+
+.dialog__form {
+  display: grid;
+  grid-template-areas:
+        "floppy title"
+        "button button";
+  gap: 28px;
+  column-gap: 27px;
+  margin: 28px;
+  align-items: center;
+}
+
+.dialog__floppy {
+ grid-area: floppy;
+ inline-size: 39px;
+ block-size: 39px;
+}
+
+.dialog__title {
+ grid-area:  title;
+ font-family: var(--font-family-accent);
+ color: var(--color-main);
+ font-size: 14px;
+ line-height: 1.5;
+ text-transform: uppercase;
+ inline-size:  230px;
+}
+
+.dialog__button {
+ grid-area:button;
+ padding: 10px;
+ border: 2px solid var(--color-main);
+}
+
 
 
 
@@ -397,6 +444,20 @@
     margin: 80px 0px;
   }
 
+
+  .footer_save-button {
+    display: flex;
+    width: 83%;
+    flex-direction: column;
+  }
+
+
+  .floppy {
+    margin-inline-start: 138px;
+    margin-block-end: 10px
+  }
+
+  
 
 
 
