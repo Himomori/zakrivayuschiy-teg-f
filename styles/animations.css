@@ -22,3 +22,23 @@
         margin-left: -24px;
     }
 }
+
+@keyframes icon-scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes icon-sparkc {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0 ;
+    }
+}

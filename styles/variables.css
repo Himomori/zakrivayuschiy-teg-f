@@ -3,8 +3,8 @@
 :root {
     --color-main: #000;
     --background-color: #FFF;
-    --font-family-accent: 'Press Start 2P';
-    --font-family-main: 'Inter-Variable';
+    --font-family-accent: 'Press Start 2P', monospase;
+    --font-family-main: 'Inter-Variable', Arial, sans-serif;
     --font-weight-main: 400;
     --font-weight-subtitle: 700;
     --margin: 25.8%;
