@@ -90,7 +90,7 @@
   cursor: pointer;
 }
 
-.theme-munu__button:focus {
+.theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
 }
@@ -98,7 +98,7 @@
 .theme-menu__button::after {
   content: "";
   display: block;
-  width: 0%;
+  width: 0;
   height: 2px;
   margin-top: 1px;
   background-color: var(--color-main);
@@ -230,7 +230,7 @@
   margin-block-end: 13px;
 }
 
-.card_like-button {
+.card__like-button {
   padding: 11px 36px 5px 34px;
   border: 2px solid var(--color-main);
   cursor: pointer;
@@ -405,13 +405,10 @@
 }
 
 @media (width <= 375px) {
-  /* .header {
-    margin: 100px 0px 98px;
-  }
 
-  .main {
-    margin: 80px 0px;
-  } */
+  .page {
+    min-width: 375px;
+  }
 
   .footer_save-button {
     display: flex;
