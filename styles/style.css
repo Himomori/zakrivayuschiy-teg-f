@@ -19,15 +19,26 @@
   min-block-size: 100dvb;
   background-color: var(--background-color);
   font-family: var(--font-family-main);
-  font-variation-settings: 'wght' var(--font-weight-main);
-  background-image:
-  repeating-linear-gradient(to left, transparent 0 2px, var(--gradient-1) 2px 4px),
-  repeating-linear-gradient(to bottom, transparent 0 2px, var(--gradient-1) 2px 4px),
-  linear-gradient(to bottom, transparent 0 2px, var(--gradient-2) 0.01%, var(--gradient-3));
+  font-variation-settings: "wght" var(--font-weight-main);
+  background-image: repeating-linear-gradient(
+      to left,
+      transparent 0 2px,
+      var(--gradient-1) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 2px,
+      var(--gradient-1) 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0 2px,
+      var(--gradient-2) 0.01%,
+      var(--gradient-3)
+    );
   background-size: cover;
   background-attachment: fixed;
 }
-
 
 .header {
   border: 2px solid var(--color-main);
@@ -56,7 +67,6 @@
   margin-block-end: 20px;
 }
 
-
 .header__subtitle {
   font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
   font-family: var(--font-family-accent);
@@ -69,7 +79,6 @@
 .header__theme-menu {
   color: var(--color-main);
 }
-
 
 .theme-menu__button {
   background-color: transparent;
@@ -88,7 +97,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -108,21 +117,16 @@
   transition: 0.3s;
 }
 
-
-
-
-
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
   margin-left: -20px;
   opacity: 0.6;
   animation-name: arrow;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
   animation-direction: alternate;
-
 }
 
 .theme-menu__button:disabled {
@@ -130,11 +134,10 @@
   pointer-events: none;
 }
 
-
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: 0.3s; 
-  animation-timing-function: ease; 
+  transition: 0.3s;
+  animation-timing-function: ease;
 }
 
 .main {
@@ -142,11 +145,9 @@
   margin-right: var(--margin);
 }
 
-
 .card__title {
   padding-block-end: 8px;
 }
-
 
 .card {
   margin-block-end: 50px;
@@ -161,7 +162,6 @@
   outline: 2px solid var(--color-main);
 }
 
-
 .label {
   font-size: 14px;
   position: absolute;
@@ -173,20 +173,13 @@
   padding-block-start: 25px;
   z-index: 1;
   text-shadow: 1px 0 0 var(--color-shadow, #fff),
-    0 1px 0 var(--color-shadow, #fff),
-    -1px 0 0 var(--color-shadow, #fff),
+    0 1px 0 var(--color-shadow, #fff), -1px 0 0 var(--color-shadow, #fff),
     0 -1px 0 var(---color-shadow, #fff);
 }
-
 
 .images {
   display: block;
   width: 100%;
-
-}
-
-.images- {
-
 }
 
 .images-grayscale {
@@ -218,23 +211,21 @@
   filter: brightness(150%) saturate(70%) hue-rotate(73deg);
 }
 
-
 .paragraph__title {
   font-size: 14px;
   color: var(--color-main);
   font-weight: var(--font-weight-subtitle);
   margin-inline-start: 7px;
   margin-block-start: 3px;
-  font-variation-settings: 'wght' var(--font-weight-subtitle);
+  font-variation-settings: "wght" var(--font-weight-subtitle);
 }
 
-.paragraph{
+.paragraph {
   font-size: 14px;
   margin: 28px 25px;
   color: var(--color-main);
   font-weight: var(--font-weight-main);
 }
-
 
 .button__container {
   display: flex;
@@ -243,9 +234,6 @@
   margin-inline-end: 22px;
   margin-block-end: 13px;
 }
-
-
-
 
 .card_like-button {
   padding: 11px 36px 5px 34px;
@@ -260,7 +248,7 @@
 }
 
 .button__pseudo::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--background-button);
@@ -277,22 +265,17 @@
   font-family: var(--font-family-accent);
   font-size: 14px;
   color: var(--color-main);
-  line-height: 90%; 
+  line-height: 90%;
 }
-
 
 .button__pseudo:focus {
   outline: none;
 }
 
-
 .button__pseudo:focus-visible {
   box-shadow: 2px 2px 0 var(--color-main);
   transition: 0.3s;
 }
-
-
-
 
 .footer_like-button {
   cursor: pointer;
@@ -304,8 +287,6 @@
   background-color: var(--background-color);
   border: 1px solid transparent;
 }
-
-
 
 .card__icon-button:hover .core {
   fill: var(--heart-contour);
@@ -326,7 +307,6 @@
   fill: var(--heart-background);
   transition: fill 0.3s 0.05s;
 }
-
 
 .like-icon.is-liked .core {
   fill: var(--heart-background);
@@ -363,11 +343,9 @@
   transition: border 0.3s ease;
 }
 
-
 .sparkc {
   opacity: 0;
 }
-
 
 .floppy {
   max-block-size: 21px;
@@ -401,8 +379,8 @@
 .dialog__form {
   display: grid;
   grid-template-areas:
-        "floppy title"
-        "button button";
+    "floppy title"
+    "button button";
   gap: 28px;
   column-gap: 27px;
   margin: 28px;
@@ -410,40 +388,35 @@
 }
 
 .dialog__floppy {
- grid-area: floppy;
- inline-size: 39px;
- block-size: 39px;
+  grid-area: floppy;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .dialog__title {
- grid-area:  title;
- font-family: var(--font-family-accent);
- color: var(--color-main);
- font-size: 14px;
- line-height: 1.5;
- text-transform: uppercase;
- inline-size:  230px;
+  grid-area: title;
+  font-family: var(--font-family-accent);
+  color: var(--color-main);
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  inline-size: 230px;
 }
 
 .dialog__button {
- grid-area:button;
- padding: 10px;
- border: 2px solid var(--color-main);
+  grid-area: button;
+  padding: 10px;
+  border: 2px solid var(--color-main);
 }
-
-
-
 
 @media (width <= 375px) {
   .header {
     margin: 100px 0px 98px;
   }
 
-
   .main {
     margin: 80px 0px;
   }
-
 
   .footer_save-button {
     display: flex;
@@ -451,18 +424,8 @@
     flex-direction: column;
   }
 
-
   .floppy {
     margin-inline-start: 138px;
-    margin-block-end: 10px
+    margin-block-end: 10px;
   }
-
-  
-
-
-
-
-
-
-
 }
