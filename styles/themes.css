@@ -11,9 +11,13 @@
   --font-weight-main: 400;
   --font-weight-subtitle: 700;
   --color-shadow: #fff;
-  --gradient-1: #d3d3d3;
-  --gradient-2: #e7e7e7;
-  --gradient-3: #1a1a1a;
+  --background-image: repeating-linear-gradient(
+      to left,
+      transparent 0 2px,
+      #d3d3d3 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
+    linear-gradient(to bottom, transparent 0 2px, #e7e7e7 0.01%, #1a1a1a);
   --difference: #000;
   --background-button: #fff;
   --heart-contour: #000;
@@ -27,9 +31,13 @@
     --font-weight-main: 400;
     --font-weight-subtitle: 700;
     --color-shadow: #fff;
-    --gradient-1: #d3d3d3;
-    --gradient-2: #e7e7e7;
-    --gradient-3: #1a1a1a;
+    --background-image: repeating-linear-gradient(
+        to left,
+        transparent 0 2px,
+        #d3d3d3 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
+      linear-gradient(to bottom, transparent 0 2px, #e7e7e7 0.01%, #1a1a1a);
     --difference: #000;
     --background-button: #fff;
     --heart-contour: #000;
@@ -43,9 +51,13 @@
   --font-weight-main: 465;
   --font-weight-subtitle: 785;
   --color-shadow: #000;
-  --gradient-1: #000;
-  --gradient-2: #007f0c;
-  --gradient-3: #004306;
+  --background-image: repeating-linear-gradient(
+      to left,
+      transparent 0 2px,
+      #000 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 2px, #000 2px 4px),
+    linear-gradient(to bottom, transparent 0 2px, #007f0c 0.01%, #004306);
   --difference: #e7e7e7;
   --background-button: #00cc14;
   --heart-contour: #00cc14;
@@ -59,9 +71,13 @@
     --font-weight-main: 465;
     --font-weight-subtitle: 785;
     --color-shadow: #000;
-    --gradient-1: #000;
-    --gradient-2: #007f0c;
-    --gradient-3: #004306;
+    --background-image: repeating-linear-gradient(
+        to left,
+        transparent 0 2px,
+        #000 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, transparent 0 2px, #000 2px 4px),
+      linear-gradient(to bottom, transparent 0 2px, #007f0c 0.01%, #004306);
     --difference: #e7e7e7;
     --background-button: #00cc14;
     --heart-contour: #00cc14;

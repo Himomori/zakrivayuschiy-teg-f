@@ -21,22 +21,7 @@
   margin: 0 auto;
   width: 49%;
   font-variation-settings: "wght" var(--font-weight-main);
-  background-image: repeating-linear-gradient(
-      to left,
-      transparent 0 2px,
-      var(--gradient-1) 2px 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0 2px,
-      var(--gradient-1) 2px 4px
-    ),
-    linear-gradient(
-      to bottom,
-      transparent 0 2px,
-      var(--gradient-2) 0.01%,
-      var(--gradient-3)
-    );
+  background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -127,8 +112,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  top: 74%;
-  left: 45%;
+  right: 93px;
   opacity: 0.6;
   animation-name: arrow;
   animation-duration: 0.5s;
@@ -236,7 +220,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-inline-end: 24px;
+  margin-inline-end: 28px;
   margin-block-end: 14px;
 }
 
@@ -255,6 +239,7 @@
   background-color: var(--background-color);
   position: relative;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 .button__pseudo::before {
@@ -284,7 +269,6 @@
 
 .button__pseudo:focus-visible {
   box-shadow: 2px 2px 0 var(--color-main);
-  transition: 0.3s;
 }
 
 .footer_like-button {
@@ -300,11 +284,6 @@
   max-height: 38px;
   margin-block-end: 8px;
   margin-inline-end: 6px;
-  transition: fill 0.3s;
-}
-
-.card__icon-button {
-  outline: none;
 }
 
 .card__icon-button:focus {
@@ -316,18 +295,17 @@
   transition: 0.3s ease;
 }
 
-.sparkc {
-  opacity: 0;
-}
-
 .floppy {
   max-block-size: 21px;
   max-inline-size: 21px;
+  z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .footer {
   display: flex;
   justify-content: center;
+  margin-block-end: 100px;
 }
 
 .footer_save-button {
@@ -338,6 +316,7 @@
 }
 
 .dialog[open] {
+  inset: 0;
   position: fixed;
   padding: 0;
   border: 2px solid var(--color-main);
@@ -346,7 +325,7 @@
 
 .dialog::backdrop {
   opacity: 0.75;
-  background-color: var(--color-main);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .dialog__form {
@@ -379,7 +358,7 @@
 
 .dialog__button {
   grid-area: button;
-  padding: 10px;
+  padding: 9px;
   border: 2px solid var(--color-main);
   cursor: pointer;
 }
@@ -427,16 +406,30 @@
     margin: 27px 25px;
   }
 
+  .button__container {
+    margin-inline-end: 24px;
+  }
+
   .footer_save-button {
     display: flex;
     width: 83%;
     flex-direction: column;
-    padding: 22px 20px;
+    padding: 13px 20px;
   }
 
   .floppy {
     max-block-size: 28px;
     max-inline-size: 27px;
     margin-inline-start: 120px;
+    margin-block-end: 11px;
+  }
+
+  .dialog__form {
+    padding-inline-end: 12px;
+    padding-inline-start: 10px;
+  }
+
+  .dialog__title {
+    max-width: 196px;
   }
 }
