@@ -11,6 +11,7 @@
   --font-weight-main: 400;
   --font-weight-subtitle: 700;
   --color-shadow: #fff;
+  --button-color: #fff;
   --background-image: repeating-linear-gradient(
       to left,
       transparent 0 2px,
@@ -31,6 +32,7 @@
     --font-weight-main: 400;
     --font-weight-subtitle: 700;
     --color-shadow: #fff;
+    --button-color: #fff;
     --background-image: repeating-linear-gradient(
         to left,
         transparent 0 2px,
@@ -51,6 +53,7 @@
   --font-weight-main: 465;
   --font-weight-subtitle: 785;
   --color-shadow: #000;
+  --button-color: #00cc14;
   --background-image: repeating-linear-gradient(
       to left,
       transparent 0 2px,
@@ -71,6 +74,7 @@
     --font-weight-main: 465;
     --font-weight-subtitle: 785;
     --color-shadow: #000;
+    --button-color: #00cc14;
     --background-image: repeating-linear-gradient(
         to left,
         transparent 0 2px,

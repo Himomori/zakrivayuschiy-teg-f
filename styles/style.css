@@ -64,10 +64,6 @@
   text-transform: uppercase;
 }
 
-.theme-menu__list {
-  position: relative;
-}
-
 .header__theme-menu {
   color: var(--color-main);
 }
@@ -81,6 +77,7 @@
   margin-block-start: 9px;
   margin-left: 14px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .theme-menu__button:focus {
@@ -106,13 +103,13 @@
 .theme-menu__button:focus-visible {
   outline: none;
   opacity: 0.6;
-  transition: 0.3s;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  right: 93px;
+  left: -13px;
+  top: 1px;
   opacity: 0.6;
   animation-name: arrow;
   animation-duration: 0.5s;
@@ -124,11 +121,11 @@
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
+  position: relative;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: 0.3s;
   animation-timing-function: ease;
 }
 
@@ -210,9 +207,14 @@
   font-variation-settings: "wght" var(--font-weight-subtitle);
 }
 
+.card__footer {
+  padding: 28px 28px 0px 25px;
+}
+
 .paragraph {
+  font-feature-settings: "wght" var(--font-weight-main);
   font-size: 18px;
-  margin: 27px 28px;
+  margin-block-end: 26px;
   color: var(--color-main);
 }
 
@@ -221,7 +223,7 @@
   justify-content: flex-end;
   align-items: center;
   margin-inline-end: 28px;
-  margin-block-end: 14px;
+  margin-block-end: 17px;
 }
 
 .like-icon {
@@ -229,7 +231,7 @@
 }
 
 .card__like-button {
-  padding: 11px 36px 5px 34px;
+  padding: 7px 36px 7px 34px;
   margin-block-end: 8px;
   border: 2px solid var(--color-main);
   cursor: pointer;
@@ -284,6 +286,7 @@
   max-height: 38px;
   margin-block-end: 8px;
   margin-inline-end: 6px;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -292,14 +295,15 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--color-main);
-  transition: 0.3s ease;
 }
 
 .floppy {
-  max-block-size: 21px;
-  max-inline-size: 21px;
+  max-block-size: 29px;
+  max-inline-size: 29px;
   z-index: 1;
+  color: var(--button-color, #fff);
   mix-blend-mode: difference;
+  margin-block-start: 5px;
 }
 
 .footer {
@@ -310,7 +314,7 @@
 
 .footer_save-button {
   width: 48%;
-  padding: 13px 15px;
+  padding: 4px 7px 8px 2px;
   border: 2px solid var(--color-main);
   cursor: pointer;
 }
@@ -343,6 +347,9 @@
   grid-area: floppy;
   inline-size: 39px;
   block-size: 39px;
+  z-index: 1;
+  color: var(--button-color);
+  mix-blend-mode: difference;
 }
 
 .dialog__title {
@@ -363,9 +370,9 @@
   cursor: pointer;
 }
 
-@media (width <= 820px) {
+@media (width <= 830px) {
   .header__title {
-    font-size: clamp(2.625rem, 2.2037rem + 1.7978vw, 3.125rem);
+    font-size: clamp(2.25rem, 1.8379rem + 1.7582vw, 2.75rem);
   }
 }
 
@@ -402,34 +409,24 @@
     padding-inline-end: 5px;
   }
 
-  .paragraph {
-    margin: 27px 25px;
-  }
-
-  .button__container {
-    margin-inline-end: 24px;
-  }
-
   .footer_save-button {
     display: flex;
     width: 83%;
     flex-direction: column;
-    padding: 13px 20px;
+    padding: 16px 20px;
   }
 
   .floppy {
-    max-block-size: 28px;
-    max-inline-size: 27px;
+    max-block-size: 30px;
+    max-inline-size: 31px;
     margin-inline-start: 120px;
-    margin-block-end: 11px;
   }
 
   .dialog__form {
-    padding-inline-end: 12px;
     padding-inline-start: 10px;
   }
 
   .dialog__title {
-    max-width: 196px;
+    max-width: 199px;
   }
 }
