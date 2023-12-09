@@ -539,36 +539,37 @@
       </article>
       <div class="footer">
         <button
+          type="button"
           class="footer_save-button button__pseudo"
           onclick="window['dialog-id'].showModal();"
           aria-controls="dialog-id"
-          type="button"
         >
-          <svg class="floppy" viewBox="0 0 27 26">
-            <use href="./svg/floppy.svg#floppy-1"></use>
+          <svg class="floppy" viewBox="0 0 28 28">
+            <use href="/svg/floppy.svg#floppy-1"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
-      </div>
       <dialog id="dialog-id" class="dialog">
-        <form class="dialog__form" method="dialog">
+        <div class="dialog__content">
           <svg
             class="dialog__floppy"
-            viewBox="0 0 21 21"
+            viewBox="0 0 33 35"
             xmlns="http://www.w3.org/2000/svg"
           >
             <use href="./svg/floppy.svg#floppy-1"></use>
           </svg>
           <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
-          <form class="dialog__form" method="dialog">
-            <button
-            type="button"
-            onclick="window['dialog-id'].close();"
-            class="dialog__button button__pseudo">
-          <span class="button__text">ОК</span>
-        </button>
-          </form>
+        </div>
+        <form class="dialog__form" method="dialog">
+          <button
+           type="button"
+           onclick="window['dialog-id'].close();"
+           class="dialog__button button__pseudo">
+            <span class="button__text">Ок</span>
+          </button>
+        </form>
       </dialog>
+    </div>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
