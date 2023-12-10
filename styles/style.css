@@ -435,7 +435,7 @@
   }
 
   .dialog[open] {
-    max-width: 334px;
+    max-width: 339px;
   }
 
   .dialog__content {
@@ -443,9 +443,9 @@
   }
 
   .dialog__button {
-    width: 94%;
-    padding: 3px 0px 2px 3px;
-    margin-inline-start: 6px;
+    width: 92%;
+    padding: 12px 0px 2px 3px;
+    margin-inline-start: 10px;
   }
 
   .dialog__floppy {
